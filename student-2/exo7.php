@@ -2,7 +2,7 @@
 
 function sumFor($int){
 	$somme = 0;
-	for ($i=1; $i <= $int; $i++) { 
+	for ($i=1; $i <=q $int; $i++) { 
 		$somme = $somme +$i;
 	}
 	return $somme;

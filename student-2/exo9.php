@@ -1,8 +1,16 @@
 <?php
 
-	for ($i=1; $i <= 5; $i++) { 
-		for ($j=1; $j <= $i ; $j++) { 
-			echo 'a';
+function tree($lines) {​​
+
+	for ($i=1; $i < $lines; $i++) { 
+		if ($i <= ($lines /2)) {
+			echo str_repeat('a', $i).'\n'; // FIrst Half
 		}
-		echo '<br>';
+		else{
+			echo str_repeat('a', $lines-$i).'\n'; // Second half
+		}
 	}
+
+}
+
+tree(5);
